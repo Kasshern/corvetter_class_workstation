@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rajdhani, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ShipLayout from "@/components/layout/ShipLayout";
 
 const rajdhani = Rajdhani({
   weight: ["300", "400", "500", "600", "700"],
@@ -55,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${rajdhani.variable} ${jetbrainsMono.variable}`}>
       <body className="antialiased">
-        {children}
+        <ShipLayout>{children}</ShipLayout>
       </body>
     </html>
   );

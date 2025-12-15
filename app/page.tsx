@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-8">
+    <div className="px-6 py-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="mb-12 border-b border-border pb-6">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </footer>
       </div>
-    </main>
+    </div>
   );
 }
 
